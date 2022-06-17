@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=poppins')
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -8,14 +8,19 @@
 body{
     background: #56baed;
 }
-.select-box{
+.select-box, .play-board{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.select-box{
+   
     background: #fff;
     padding: 20px 25px 25px;
     border-radius: 5px;
+    max-width: 330px;
+    width: 100%;
     display: none; 
 }
 .select-box header{
@@ -49,9 +54,28 @@ body{
 .options button:hover{
     transform: scale(0.96);
 }
-.options button .playerX{
+.options button.playerX{
     margin-right: 5px;
 }
 .options button .playerO{
     margin-left: 5px;
+}
+.play-board .details{
+    background:#fff;
+    padding:7px;
+    border-radius:5px;
+}
+.play-board .playboard-area{
+    margin-top: 20px;
+}
+.play-board .section{
+    display:flex;
+}
+.play-board section span{
+    display: block;
+    margin: 20px;
+    height:80px;
+    width: 80px;
+    background: #fff;
+    border-radius: 5px;
 }
