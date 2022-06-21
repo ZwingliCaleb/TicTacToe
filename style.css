@@ -212,17 +212,3 @@ body{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.play-board .playboard-area{
-    margin-top: 20px;
-}
-.play-board .section{
-    display:flex;
-}
-.play-board section span{
-    display: block;
-    margin: 20px;
-    height:80px;
-    width: 80px;
-    background: #fff;
-    border-radius: 5px;
-}
