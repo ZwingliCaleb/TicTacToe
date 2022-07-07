@@ -83,3 +83,14 @@ function bot(){
 allBox[randomBox].style.pointerEvents = "none";
 playBoard.style.pointerEvents = "auto";
 playerSign = "X";
+}
+}
+
+function getidVal (classname){
+    return document.querySelector(".box" + classname).id;
+}
+function checkIdSign(val1, val2, val3, sign){
+    if(getidVal(val1) == sign && getIdVal (val2) == sign && getIdVal(val3) == sign){
+        return true;
+    }
+}
